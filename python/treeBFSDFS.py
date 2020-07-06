@@ -21,12 +21,12 @@ def BFS(root):
 
         if current.left != None:
             if current.left.visited == False:
-                current.left.visited == True
+                current.left.visited = True
                 queue.append(current.left)
 
         if current.right != None:
             if current.right.visited == False:
-                current.right.visited == True
+                current.right.visited = True
                 queue.append(current.right)
             
 # Uses recursion and a Stack to perform DFS.
